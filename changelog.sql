@@ -10,3 +10,18 @@ CREATE TABLE dbo.George
     ID INT IDENTITY
 )
 GO
+
+--changeset liquibase:3
+CREATE PROC dbo.SP1
+AS
+BEGIN
+    SELECT * FROM dbo.test_table
+END
+GO
+
+--changeset robin:4
+CREATE TABLE dbo.Wassiss
+(
+    ID INT IDENTITY
+)
+GO
