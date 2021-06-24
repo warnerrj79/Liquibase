@@ -1,0 +1,5 @@
+CREATE TABLE dbo.George
+(
+    ID INT IDENTITY
+)
+GO
