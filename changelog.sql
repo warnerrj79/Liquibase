@@ -25,3 +25,13 @@ CREATE TABLE dbo.Wassiss
     ID INT IDENTITY
 )
 GO
+
+--changeset robin:5
+ALTER TABLE dbo.Wassiss
+ADD Column1 VARCHAR(20)
+GO
+
+--changeset robin:6
+DROP TABLE dbo.Wassiss
+GO
+
