@@ -1,0 +1,23 @@
+liquibase update: updates the target DB schema to the changelog file definition
+liquibase --changeLogFile=changelog.sql updateSQL: verfies the code which to be run against the database
+liquibase history: look at deployed changes on the DB
+liquibase status: look at undeployed changes on the DB
+
+liquibase --changeLogFile=dbchangelog.mssql.sql generateChangeLog
+    WARNING: community only outputs tables
+
+liquibase diff: compares source and target
+    configure in the properties file or use command line
+    can use json format with PRO
+    can be filtered by params
+
+liquibase diffChangeLog: creates a changelog of diffs between 2 database
+    more funtionality with PRO
+
+liquibase rollbackCount 3: rollbacks 3 changes
+liquibase rollbackDate 2020-04-04: rollbacks to a certain database
+liquibase rollback mytag: rollback any changes up to a specific tag name
+
+PRO provides Targeted Rollback. 2 options:
+    - target specfic changeset without affecting any other
+    - target one specific SQL update
