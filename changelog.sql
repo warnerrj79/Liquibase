@@ -35,3 +35,9 @@ GO
 DROP TABLE dbo.Wassiss
 GO
 
+
+--changeset George:7
+ALTER TABLE dbo.George
+ADD FName VARCHAR(50)
+GO
+
