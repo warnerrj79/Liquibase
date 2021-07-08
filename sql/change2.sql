@@ -1,0 +1,4 @@
+CREATE TABLE dbo.test2
+(
+    ID INT IDENTITY
+)
