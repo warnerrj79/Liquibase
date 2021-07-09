@@ -13,6 +13,8 @@ liquibase diff: compares source and target
 
 liquibase diffChangeLog: creates a changelog of diffs between 2 database
     more funtionality with PRO
+liquibase --changeLogFile=mychangelog.xml generateChangeLog
+liquibase --changelogFile=mychangelog.mssql.sql changelogSync (syncs databasechangelogtable with generated changelog above)
 
 liquibase rollbackCount 3: rollbacks 3 changes
 liquibase rollbackDate 2020-04-04: rollbacks to a certain database
@@ -21,3 +23,4 @@ liquibase rollback mytag: rollback any changes up to a specific tag name
 PRO provides Targeted Rollback. 2 options:
     - target specfic changeset without affecting any other
     - target one specific SQL update
+
